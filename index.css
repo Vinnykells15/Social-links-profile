@@ -1,0 +1,93 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Inter-variable;
+  margin: 3rem;
+}
+
+@font-face {
+  font-family: Inter-variable;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.contain {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  border: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.location {
+  color: #a4ff00;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0 20px;}
+
+.qualities {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.contain .button {
+  display: block;
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contain .button:hover {
+  background-color: #a4ff00;
+  color: black
+}
+
+.attribution {
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+ body {
+  margin-left: 1.65rem;
+ }
+
+.contain {
+height: 650px;
+margin-bottom: 10px;
+}
+
+ .contain .button {
+  padding: 20px 0;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+ .attribution {
+  font-size: 12px;
+ }
+}
