@@ -80,12 +80,8 @@ img {
 @media (max-width: 768px) {
  body {
   margin-left: 1.65rem;
+  margin-right: 1.65rem;
  }
-
-.contain {
-height: 650px;
-margin-bottom: 10px;
-}
 
  .contain .button {
   padding: 20px 0;
