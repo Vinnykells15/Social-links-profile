@@ -1,17 +1,26 @@
+:root {
+  --primary-bg: #121212;
+  --secondary-bg: #1e1e1e;
+  --highlight: #a4ff00;
+  --text-color: #ffffff;
+  --subtext-color: #b3b3b3;
+  --button-bg: #333;
+}
+
 body {
-  background-color: #121212;
-  color: #fff;
-  font-family: 'Inter-variable', Arial, Helvetica, sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: 'Inter-variable', sans-serif;
   margin: 3rem;
 }
 
 @font-face {
   font-family: 'Inter-variable';
-  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(/assets/fonts/Inter-VariableFont_slnt,wght.ttf);
 }
 
 .contain {
-  background-color: #1e1e1e;
+  background-color: var(--secondary-bg);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -35,20 +44,22 @@ img {
 }
 
 .location {
-  color: #a4ff00;
+  color: var(--highlight);
   font-size: 14px;
   font-weight: 600;
-  margin: 5px 0 20px;}
+  margin: 5px 0 20px;
+}
 
 .qualities {
   font-size: 14px;
-  color: #b3b3b3;
+  color: var(--subtext-color);
+  margin-bottom: 20px;
 }
 
-.contain .button {
+.button {
   display: block;
-  background-color: #333;
-  color: #ffffff;
+  background-color: var(--button-bg);
+  color: var(--text-color);
   padding: 10px 0;
   margin: 10px auto;
   border-radius: 10px;
@@ -57,20 +68,21 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.contain .button:hover {
-  background-color: #a4ff00;
-  color: black
+.button:hover {
+  background-color: var(--highlight);
+  color: var(--primary-bg);
 }
 
 .attribution {
   margin-top: 15px;
   font-size: 15px;
   text-align: center;
+  color: var(--subtext-color);
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
-
 }
 
 .attribution a:hover {
@@ -78,22 +90,21 @@ img {
 }
 
 @media (max-width: 768px) {
- body {
-  margin-left: 1.65rem;
- }
+  body {
+    margin-left: 1.65rem;
+    margin-right: 1.65rem;
+  }
 
-.contain {
-height: 650px;
-margin-bottom: 10px;
-}
+  .contain {
+    padding: 15px;
+  }
 
- .contain .button {
-  padding: 20px 0;
-  margin: 20px 0;
-  font-size: 20px;
-}
+  .button {
+    padding: 15px 0;
+    font-size: 16px;
+  }
 
- .attribution {
-  font-size: 12px;
- }
+  .attribution {
+    font-size: 12px;
+  }
 }
