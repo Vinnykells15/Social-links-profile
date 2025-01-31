@@ -1,12 +1,12 @@
 body {
   background-color: #121212;
   color: #fff;
-  font-family: 'Inter-variable', Arial, Helvetica, sans-serif;
+  font-family: "Inter-variable", Arial, Helvetica, sans-serif;
   margin: 3rem;
 }
 
 @font-face {
-  font-family: 'Inter-variable';
+  font-family: "Inter-variable";
   src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
@@ -38,7 +38,27 @@ img {
   color: #a4ff00;
   font-size: 14px;
   font-weight: 600;
-  margin: 5px 0 20px;}
+  margin: 5px 0 20px;
+}
+
+.title {
+  color: #a4ff00;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+.email {
+  color: #a4ff00;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: -10px;
+  text-decoration: none;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
 
 .qualities {
   font-size: 14px;
@@ -59,37 +79,25 @@ img {
 
 .contain .button:hover {
   background-color: #a4ff00;
-  color: black
+  color: black;
 }
 
-.attribution {
-  margin-top: 15px;
-  font-size: 15px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-  text-decoration: none;
-
-}
-
-.attribution a:hover {
-  text-decoration: underline;
+.utc-time {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #b3b3b3;
 }
 
 @media (max-width: 768px) {
- body {
-  margin-left: 1.65rem;
-  margin-right: 1.65rem;
- }
+  body {
+    margin-left: 1.65rem;
+    margin-right: 1.65rem;
+  }
 
- .contain .button {
-  padding: 20px 0;
-  margin: 20px 0;
-  font-size: 20px;
-}
-
- .attribution {
-  font-size: 12px;
- }
+  .contain .button {
+    padding: 20px 0;
+    margin: 20px 0;
+    font-size: 20px;
+  }
 }
